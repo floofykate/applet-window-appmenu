@@ -34,7 +34,17 @@ This is a Plasma 5 applet that shows the current window appmenu in your panels. 
 
 **X11 libraries**: XCB RandR
 
-# Install
+## Fedora - Dependencies
 
-You can execute `sh install.sh` in the root directory as long as you have installed the previous mentioned development packages
+```
+sudo dnf install qt5 qt5-qtbase-devel qt5-qtdeclarative-devel libSM libSM-devel qt5-qtx11extras-devel kf5-kwindowsystem-devel kf5-kconfigwidgets-devel kf5-plasma-devel kdecoration-devel extra-cmake-modules qt5-qtquickcontrols
+```
+
+# Install
+Handle dependency resolution then:
+
+```
+git clone https://github.com/psifidotos/applet-window-appmenu
+sh install.sh
+```
 
